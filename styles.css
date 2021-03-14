@@ -42,7 +42,9 @@ html {
 
 #navbar-right a {
   padding-left: 32px;
+  text-align: center;
 }
+
 
 /* homepage carousel - taken from w3 schools and modified*/
 * {box-sizing:border-box}
@@ -139,13 +141,13 @@ html {
 .grid-item {
   /* background-color: rgba(255, 255, 255, 0.8); */
   /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  display: inline-block;
   padding: 30px;
   font-size: 30px;
   text-align: center;
 }
 #browseTitle {
   text-align: center;
-
 }
 .bunPic {
   width: 225px;
@@ -158,9 +160,25 @@ html {
   font-size: 16px;
   text-align: left;
 }
+.shopDetail .button {
+  background-color: #722015;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  /* margin: 4px 2px; */
+  cursor: pointer;
+  float: right;
+  
+
+}
+
 
 /* detail page */
-.shopDetail .button {
+.productOptions .button {
   background-color: #722015;
   border: none;
   color: white;
@@ -169,10 +187,7 @@ html {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  /* margin: 4px 2px; */
   cursor: pointer;
-  /* position: absolute; */
-  /* left: 40%; */
   float: right;
 
 }
@@ -188,59 +203,4 @@ html {
 .productDetail img {
   float: left;
   padding-right: 50px;
-}
-
-/* form for options in detail page */
-.grid-container-detail {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  /* background-color: #2196F3; */
-  /* padding: 10px; */
-  margin-left: 50px;
-  margin-right: 50px;
-}
-.grid-item-option {
-  /* background-color: rgba(255, 255, 255, 0.8); */
-  /* border: 1px solid rgba(0, 0, 0, 0.8); */
-  padding: 30px;
-  font-size: 30px;
-  text-align: center;
-}
-
-form {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 20px;
-}
-
-form label {
-  display: block;
-  margin: 0;
-}
-form p {
-  margin: 0;
-}
-form input {
-  padding: 0;
-  margin-right: 0;
-}
-
-#options {
-  margin-top: 100px;
-}
-
-#options .button {
-  background-color: #722015;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  /* margin: 4px 2px; */
-  cursor: pointer;
-  /* position: absolute; */
-  /* left: 40%; */
-  float: right;
 }

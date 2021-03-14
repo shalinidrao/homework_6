@@ -46,35 +46,40 @@
   <br/>
   <br/>
   <!-- select options for order and add to cart -->
-  <div id="options">
-    <form action="">
-      <p>
+  <div class="productOptions">
+  <div class="grid-container" style="float: left;">
+    <div class="grid-item" style="text-align: left;">
         <h4>Glaze</h4><br/>
-        <input type="radio" id="none" name="glaze" value="none">
-        <label for="none">None</label><br>
-        <input type="radio" id="sugarmilk" name="glaze" value="sugarmilk">
-        <label for="sugarmilk">Sugar-Milk</label><br>
-        <input type="radio" id="vanillamilk" name="glaze" value="vanillamilk">
-        <label for="vanillamilk">Vanilla-Milk</label><br>
-        <input type="radio" id="doublechocolate" name="glaze" value="doublechocolate">
-        <label for="doublechocolate">Double Chocolate</label><br>
-      </p>
-      <p>
+        <p>
+          <input type="radio" id="none" name="glaze" value="none">
+          <label for="none">None</label><br>
+          <input type="radio" id="sugarmilk" name="glaze" value="sugarmilk">
+          <label for="sugarmilk">Sugar-Milk</label><br>
+          <input type="radio" id="vanillamilk" name="glaze" value="vanillamilk">
+          <label for="vanillamilk">Vanilla-Milk</label><br>
+          <input type="radio" id="doublechocolate" name="glaze" value="doublechocolate">
+          <label for="doublechocolate">Double Chocolate</label><br>
+        </p>
+    </div>
+    <div class="grid-item" style="text-align: left;">
         <h4>Quantity</h4><br/>
-        <input type="radio" id="one" name="quantity" value="one">
-        <label for="one">1</label><br>
-        <input type="radio" id="three" name="quantity" value="three">
-        <label for="three">3</label><br>
-        <input type="radio" id="six" name="quantity" value="six">
-        <label for="six">6</label><br>
-        <input type="radio" id="twelve" name="quantity" value="twelve">
-        <label for="twelve">12</label><br>
-      </p>
-      <p>
-        <a href="cart.html" class="button">ADD TO CART</a>
-      </p>
-    </form>
+        <p>
+          <input type="radio" id="one" name="quantity" value="one">
+          <label for="one">1</label><br>
+          <input type="radio" id="three" name="quantity" value="three">
+          <label for="three">3</label><br>
+          <input type="radio" id="six" name="quantity" value="six">
+          <label for="six">6</label><br>
+          <input type="radio" id="twelve" name="quantity" value="twelve">
+          <label for="twelve">12</label><br>
+        </p>
+    </div>
+    <div class="grid-item" style="margin-top: 90%;">
+        <a href="cart.html" class="button" id="addCart">ADD TO CART</a>
+    </div>
+    
   </div>
+</div>
 </body>
 
 </html>
