@@ -9,10 +9,8 @@ html {
 #navbar {
   color: #722015;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* padding: 2em 10%; */
-  /* background-color: #000; */
-  border-bottom: 1px solid #333333;
+  grid-template-columns: auto auto;
+  border-bottom: 1px solid black;
   margin-right: -75px;
   margin-left: -75px;
 }
@@ -29,25 +27,24 @@ html {
   color: black;
 }
 
-#nav-left {
+#navbar-left {
   float: left;
 }
 
-
-#nav-left a {
+#navbar-left a {
   padding-right: 32px;
 }
 
-#nav-right {
+#navbar-right {
   justify-self: end;
   padding-top: 20px;
 }
 
-#nav-right a {
+#navbar-right a {
   padding-left: 32px;
 }
 
-/* homepage carousel */
+/* homepage carousel - taken from w3 schools and modified*/
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -104,7 +101,7 @@ html {
   background-color: #717171;
 }
 
-
+/* homepage */
 .shopAll .button {
   background-color: #722015;
   border: none;
@@ -130,6 +127,7 @@ html {
   padding: 0px 20px 0px 20px;
 }
 
+/* browsing page */
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -145,26 +143,23 @@ html {
   font-size: 30px;
   text-align: center;
 }
-
 #browseTitle {
   text-align: center;
 
 }
-
 .bunPic {
   width: 225px;
 }
-
 .bunTitle{
   font-size: 26px;
   text-align: left;
 }
-
 .bunDescription {
   font-size: 16px;
   text-align: left;
 }
 
+/* detail page */
 .shopDetail .button {
   background-color: #722015;
   border: none;
@@ -181,12 +176,10 @@ html {
   float: right;
 
 }
-
 .backBrowse .button {
   text-decoration: none;
   color: #722015;
 }
-
 .productDetail {
   margin-top: 5%;
   margin-left: 15%;
@@ -197,6 +190,7 @@ html {
   padding-right: 50px;
 }
 
+/* form for options in detail page */
 .grid-container-detail {
   display: grid;
   grid-template-columns: auto auto auto;
