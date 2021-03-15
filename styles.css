@@ -151,6 +151,7 @@ html {
 }
 .bunPic {
   width: 225px;
+  height: 212px;
 }
 .bunTitle{
   font-size: 26px;
@@ -203,4 +204,5 @@ html {
 .productDetail img {
   float: left;
   padding-right: 50px;
+  width: 50%;
 }
