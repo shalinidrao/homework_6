@@ -7,10 +7,10 @@
     <!-- stylesheets -->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script type="text/javascript" src="main.js"></script>
 
 </head>
-<body>
+<body onload="setDetailImage()">
   <!-- navigation bar that leads back to homepage, browsing, and other options -->
   <div id="homepage-top">
     <div id="navbar">
@@ -33,8 +33,9 @@
   <!-- product details -->
   <div class="productDetail">
     <p>
-      <img src="images/bun7.jpg" class="detailImage" alt="Pumpkin Spice" width="300px">
+      <img id="detailImage" src="" alt="Cinnamon Bun with no glaze" width="300px">
       <h1>PUMPKIN SPICE</h1>
+      <h1 id="detailTitle"></h1>
       <i>Our limited time flavor, just in time for Halloween and fall. Goes amazingly 
         with your favorite latte and knit scarf </i>
     </p>
@@ -49,30 +50,22 @@
   <div class="productOptions">
   <div class="grid-container" style="float: left;">
     <div class="grid-item" style="text-align: left;">
-        <h4>Glaze</h4><br/>
-        <p>
-          <input type="radio" id="none" name="glaze" value="none">
-          <label for="none">None</label><br>
-          <input type="radio" id="sugarmilk" name="glaze" value="sugarmilk">
-          <label for="sugarmilk">Sugar-Milk</label><br>
-          <input type="radio" id="vanillamilk" name="glaze" value="vanillamilk">
-          <label for="vanillamilk">Vanilla-Milk</label><br>
-          <input type="radio" id="doublechocolate" name="glaze" value="doublechocolate">
-          <label for="doublechocolate">Double Chocolate</label><br>
-        </p>
+        <label for="glaze"><h4>Glaze</h4></label><br/>
+        <select onchange="changeDetailImage()" name="glaze" id="glaze">
+          <option value="none">No Glaze</option>
+          <option value="sugarmilk">Sugar-Milk</option>
+          <option value="vanillamilk">Vanilla-Milk</option>
+          <option value="doublechocolate">Double Chocolate</option>
+        </select>
     </div>
     <div class="grid-item" style="text-align: left;">
-        <h4>Quantity</h4><br/>
-        <p>
-          <input type="radio" id="one" name="quantity" value="one">
-          <label for="one">1</label><br>
-          <input type="radio" id="three" name="quantity" value="three">
-          <label for="three">3</label><br>
-          <input type="radio" id="six" name="quantity" value="six">
-          <label for="six">6</label><br>
-          <input type="radio" id="twelve" name="quantity" value="twelve">
-          <label for="twelve">12</label><br>
-        </p>
+      <label for="quantity"><h4>Quantity</h4></label><br/>
+      <select onchange="changeBunTitle()" name="quantity" id="quantity">
+        <option value="one-pack">One</option>
+        <option value="three-pack">Three</option>
+        <option value="six-pack">Six</option>
+        <option value="twelve-pack">Twelve</option>
+      </select>  
     </div>
     <div class="grid-item" style="margin-top: 90%;">
         <a href="cart.html" class="button" id="addCart">ADD TO CART</a>
