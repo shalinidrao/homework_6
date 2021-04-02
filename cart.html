@@ -10,7 +10,7 @@
     <script src=“main.js“ type="text/javascript"></script>
 
 </head>
-<body>
+<body onload="setCartCount()">
   <!-- navigation bar that leads back to homepage, browsing, and other options -->
   <div id="homepage-top">
     <div id="navbar">
@@ -18,13 +18,94 @@
           <a href="index.html"><img src="images/bun_logo.png" ></a>
         </div>
         <div id="navbar-right">
-          <a href="browse.html" style="color:black; text-decoration: solid underline black 2px;">Shop</a>
+          <a href="browse.html">Shop</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
           <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:36px; color:#722015;"></i></a>
+          <a href="cart.html" id="cart-count" style="padding-left: 0px;"></a>
+
         </div>
     </div>  
   </div>
+  <br/>
+  <!-- back to browsing page -->
+  <div class="backBrowse">
+    <a href="browse.html" class="button">
+      <h3><i class="fa fa-arrow-left" aria-hidden="true" style="padding: 10px;"></i>
+      Continue Shopping</h3>
+    </a>
+  </div>
+  <div id="cart-wrapper">
+    <div id="cart">
+        <div class="cartItem">
+            <div>
+                <h4>QUANTITY</h4>
+            </div>
+            <div>
+                <h4>PRODUCT DETAILS</h4>
+            </div>
+            <div>
+                <h4>TOTAL PRICE</h4>
+            </div>
+
+        </div>
+        <hr>
+        <div class="cartItem">
+            <div>
+                <input type="text" value="1" min="1">
+            </div>
+            <div>
+                <h4>Pumpkin Spice (12-Pack)</h4>
+                <h5>Vanilla-Milk Glaze</h5>
+            </div>
+            <div>
+                <h4>$25</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="cartItem">
+          <div>
+              <input type="number" value="1" min="1">
+          </div>
+          <div>
+              <h4>Pumpkin Spice (12-Pack)</h4>
+              <h5>Vanilla-Milk Glaze</h5>
+          </div>
+          <div>
+              <h4>$25</h4>
+          </div>
+        </div>  
+        <hr>
+        <div class="cartItem">
+          <div>
+            <i class="fa fa-plus-circle" aria-hidden="true" style="font-size: 48px;"></i>
+          </div>
+          <div>
+              <a href="browse.html" style="text-decoration: none; color: inherit;"><h4>Add More Items</h4></a>
+          </div>
+          <div>
+          </div>
+        </div>      
+    </div>
+
+    <div>
+
+    </div>
+    <div id="order-summary">
+      <div id="order-total">
+        <h4 style="text-align: center;">ORDER TOTAL</h4>
+        <h5> Enter zipcode to find store for pickup:</h5>
+        <input type="number">
+        <h5>Subtotal</h5>
+        <h5>Taxes</h5>
+        <br>
+        <h5>Total</h5>
+      </div>
+      <br>
+      <button>Continue to Payment</button>
+      
+    </div>
+    </div>
 
   
 </body>

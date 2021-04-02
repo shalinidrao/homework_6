@@ -22,14 +22,11 @@
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
           <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:36px; color:#722015;"></i></a>
+          <a href="cart.html" id="cart-count" style="padding-left: 0px;"></a>
         </div>
     </div>  
   </div>
-    <br/>
-  <!-- back to browsing page -->
-  <div class="backBrowse">
-    <a href="browse.html" class="button"><h3><i class="fa fa-arrow-left" aria-hidden="true" style="padding: 10px;"></i>Back</h3></a>
-  </div>
+ 
   <!-- product details -->
   <div class="productDetail">
     <p>
@@ -67,8 +64,8 @@
         <option value="twelve-pack">Twelve</option>
       </select>  
     </div>
-    <div class="grid-item" style="margin-top: 90%;">
-        <a href="cart.html" class="button" id="addCart">ADD TO CART</a>
+    <div class="grid-item" style="margin-top: 90%;" onclick="addToCart()">
+        <button id="addCart">ADD TO CART</button>
     </div>
     
   </div>

@@ -8,11 +8,19 @@ function Bun(flavor, glaze, quantity, image) {
 
 // number of items currently in cart
 var numItems = 0; 
+localStorage.setItem("cartItemCount", numItems);
 
 function setDetailImage() {
   // sets default image on product detail page 
   console.log("it's working");
   document.getElementById("detailImage").setAttribute("src", "images/noglaze.jpeg");
+  document.getElementById("detailTitle").innerHTML = " (Single)";
+  document.getElementById("cart-count").innerHTML = "(" + localStorage.getItem("cartItemCount") + ")";
+}
+
+function setCartCount() {
+  // sets cart item count on every page
+  document.getElementById("cart-count").innerHTML = "(" + localStorage.getItem("cartItemCount") + ")";
 }
 
 
@@ -42,5 +50,12 @@ function changeBunTitle() {
   } else if (quantity.value === "twelve-pack") {
     document.getElementById("detailTitle").innerHTML = " (12-Pack)";
   } 
+}
+
+function addToCart() {
+  numItems += 1;
+  localStorage.setItem("cartItemCount", numItems);
+  document.getElementById("cart-count").innerHTML = "(" + localStorage.getItem("cartItemCount") + ")";
+
 }
 

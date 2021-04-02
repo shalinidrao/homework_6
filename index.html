@@ -7,10 +7,10 @@
     <!-- stylesheets -->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script type="text/javascript" src="main.js"></script>
 
 </head>
-<body>
+<body onload="setCartCount()">
   <!-- navigation bar that leads back to homepage, browsing, and other options -->
   <div id="homepage-top">
     <div id="navbar">
@@ -22,6 +22,8 @@
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
           <a href="cart.html"><i class="fa fa-shopping-cart" style="font-size:36px; color:#722015;"></i></a>
+          <a href="cart.html" id="cart-count" style="padding-left: 0px;"></a>
+
         </div>
     </div>  
   </div>
