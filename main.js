@@ -80,8 +80,20 @@ function addToCart() {
 }
 
 
+/* Deletes product from cart + local storage */
+function deleteItem(item) {
+  console.log(item.firstElementChild.innerHTML); 
+  item.parentNode.removeChild(item);
+  bun_from_storage.splice(item.firstElementChild.innerHTML, 1); 
+  localStorage.setItem("cart", JSON.stringify(bun_from_storage));
+  // cart_items.splice(item.firstElementChild.innerHTML, 1); 
+  // console.log(cart_items);
+  // localStorage.setItem("cart", JSON.stringify(cart_items));
+}
 
-// gets pillow from local storage and puts it in cart 
+
+
+// gets bun from local storage and puts it in cart 
 function getStorageCart() {
       if (bun_from_storage != null) {
       var i;
@@ -89,6 +101,7 @@ function getStorageCart() {
           console.log(bun_from_storage[i]);
           item = bun_from_storage[i]; 
           let cart = document.getElementById("items");
+          // let cart_item = document.createElement("div");
           let product_wrapper = document.createElement("div");
           product_wrapper.setAttribute("class", "cartItem");
           let quantity_div = document.createElement("div");
@@ -124,7 +137,7 @@ function getStorageCart() {
           // cart.insertAfter(product_wrapper, document.getElementById("cart-columns"));
           // cart.insertAfter(document.createElement("hr"), product_wrapper)
           cart.appendChild(product_wrapper);
-          // cart.appendChild(document.createElement("hr"));
+          cart.appendChild(document.createElement("hr"));
       }
     }
 }
