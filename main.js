@@ -28,7 +28,6 @@ function setCartCount() {
 }
 
 
-// TODO: CHANGE FLAVOR IDS AND IMAGE NAMES
 function changeDetailImage() {
   // changes the image on the detail page to match what glaze was selected
   let glaze = document.getElementById("glaze");
@@ -86,9 +85,6 @@ function deleteItem(item) {
   item.parentNode.removeChild(item);
   bun_from_storage.splice(item.firstElementChild.innerHTML, 1); 
   localStorage.setItem("cart", JSON.stringify(bun_from_storage));
-  // cart_items.splice(item.firstElementChild.innerHTML, 1); 
-  // console.log(cart_items);
-  // localStorage.setItem("cart", JSON.stringify(cart_items));
 }
 
 
