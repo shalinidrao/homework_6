@@ -228,7 +228,7 @@ html {
 }
 .cartItem {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr; 
+  grid-template-columns: 1fr 3fr 1fr 1fr; 
   grid-column-gap: 1em;
   grid-row-gap: 1em;
   margin-bottom: 20px;
@@ -240,6 +240,19 @@ html {
 }
 .cartItem input {
   width: 30%;
+}
+
+.cartItem button {
+  background-color: #722015;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  /* font-size: 24px; */
+  font-family: inherit;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 #order-total {

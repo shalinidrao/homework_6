@@ -7,10 +7,10 @@
     <!-- stylesheets -->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src=“main.js“ type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
 
 </head>
-<body onload="setCartCount()">
+<body onload="getStorageCart()">
   <!-- navigation bar that leads back to homepage, browsing, and other options -->
   <div id="homepage-top">
     <div id="navbar">
@@ -37,7 +37,7 @@
   </div>
   <div id="cart-wrapper">
     <div id="cart">
-        <div class="cartItem">
+        <div class="cartItem" id="cart-columns">
             <div>
                 <h4>QUANTITY</h4>
             </div>
@@ -47,10 +47,15 @@
             <div>
                 <h4>TOTAL PRICE</h4>
             </div>
+            <div>
+            </div>
 
         </div>
         <hr>
-        <div class="cartItem">
+        <div id="items">
+          
+        </div>
+        <!-- <div class="cartItem">
             <div>
                 <input type="text" value="1" min="1">
             </div>
@@ -75,7 +80,7 @@
               <h4>$25</h4>
           </div>
         </div>  
-        <hr>
+        <hr> -->
         <div class="cartItem">
           <div>
             <i class="fa fa-plus-circle" aria-hidden="true" style="font-size: 48px;"></i>
